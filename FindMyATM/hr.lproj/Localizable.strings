@@ -1,0 +1,30 @@
+/*
+ Localizable.strings
+ FindMyATM
+ 
+ Created by Jasmin Abou Aldan on 20/09/15.
+ Copyright © 2015 JaMaCo. Software. All rights reserved.
+ 
+ Translate by: Jasmin Abou Aldan
+*/
+
+NO_INTERNET = "Nema internetske veze";
+CHECK_INTERNET = "Provjerite svoju internetsku konekciju i pokušajte ponovno";
+SETTINGS = "Postavke";
+CANCEL = "Odustani";
+OK = "U redu";
+GPS_ERROR = "GPS greška";
+ALLOW_ACCES = "Potrebno je omogućiti  pristup lokaciji";
+POSITION_ERROR = "Greška lokacije";
+LOCATION_UNAVAILABLE = "Vaša lokacija još nije dohvaćena. Ukoliko se problem ponovi, provjerite svoje postavke.";
+NAVIGATION = "Navigacija";
+START_NAVIGATION = "Da li želite pokrenuti navigaciju?";
+YES = "Da";
+NO = "Ne";
+DID_YOU_KNOW = "Jeste li znali?";
+BANCO_POPOLARE = "Korisnici Banco Popolare banke mogu podići svoj novac sa bankomata OTP banke bez dodatne naknade.";
+IMEX = "Korisnici IMEX banke mogu podići novac bez naknade sa MBU ili MBNet bankomata sljedečih banaka:\nBKS,\nCroatia banka,\nErste bank,\nIstarska Kreditna Banka,\nKarlovačka banka,\nKreditna banka Zagreb,\nPartner banka,\nPodravska banka,\nSberbank,\nSlatinska banka,\nVeneto banka";
+ABOVE_BUTTON = "Odaberite banku navedenu u popisu";
+PARTNER_BANK = "Korisnici Partner banke novac mogu podići bez naknade sa bankomata MBNet grupe Croatia banake.";
+ALL_ATMS = "Svi bankomati";
+BANKS = "Banke";

@@ -1,0 +1,30 @@
+/*
+ Localizable.strings
+ FindMyATM
+ 
+ Created by Jasmin Abou Aldan on 20/09/15.
+ Copyright © 2015 JaMaCo. Software. All rights reserved.
+ 
+ Translate by: Mia Masic
+*/
+
+NO_INTERNET = "Internet non è connesso";
+CHECK_INTERNET = "Prego controlate la vostra connessione internet e riprovare";
+SETTINGS = "Impostazioni";
+CANCEL = "Cancellare";
+OK = "OK";
+GPS_ERROR = "GPS errore";
+ALLOW_ACCES = "Attivare localizzazione";
+POSITION_ERROR = "Sbagliata la posizione";
+LOCATION_UNAVAILABLE = "La vostra localizzazione non è stata ancora trovata, se il problema persiste verificare impostazioni";
+NAVIGATION = "Navigazione";
+START_NAVIGATION = "Volete avviare la navigazione? ";
+YES = "Si";
+NO = "No";
+DID_YOU_KNOW = "Lo sapevi?";
+BANCO_POPOLARE = "Membri di Banco Populare possono prelevare da qualsiasi bancomat OTP banca senza tasse di prelievo.";
+IMEX = "Membri di IMEX banca possono prelevare senza tasse di prelievo da MBU o NMNet bancomat:\nBKS,\nCroatia banka,\nErste bank,\nIstarska Kreditna Banka,\nKarlovačka banka,\nKreditna banka Zagreb,\nPartner banka,\nPodravska banka,\nSberbank,\nSlatinska banka,\nVeneto banka";
+ABOVE_BUTTON = "Scegli una banca tra quelle elencate sopra";
+PARTNER_BANK = "Membri di Partner banca possono prelevare senza tasse di prelievo da bancomat MB net, grupo Croatia banche.";
+ALL_ATMS = "Tutti bancomat";
+BANKS = "Banche";

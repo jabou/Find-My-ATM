@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>0</key>
+        <array>
+            <string>Banco Popolare</string>
+            <string>Prikaži sve bankomate:
+Banco Popolare</string>
+            <string>bancoSpotlight</string>
+        </array>
+        <key>1</key>
+        <array>
+            <string>BKS banka</string>
+            <string>Prikaži sve bankomate:
+BKS banka</string>
+            <string>bksSpotlight</string>
+        </array>
+        <key>2</key>
+        <array>
+            <string>Croatia banka</string>
+            <string>Prikaži sve bankomate:
+Croatia banka</string>
+            <string>croatiaSpotlight</string>
+        </array>
+        <key>3</key>
+        <array>
+            <string>Erste bank</string>
+            <string>Prikaži sve bankomate:
+Erste bank</string>
+            <string>ersteSpotlight</string>
+        </array>
+        <key>4</key>
+        <array>
+            <string>Hrvatska Poštanska Banka</string>
+            <string>Prikaži sve bankomate:
+Hrvatska Poštanska Banka</string>
+            <string>hpbSpotlight</string>
+        </array>
+        <key>5</key>
+        <array>
+            <string>Hypo Alpe Adria Bank</string>
+            <string>Prikaži sve bankomate:
+Hypo Alpe Adria Bank</string>
+            <string>hypoSpotlight</string>
+        </array>
+        <key>6</key>
+        <array>
+            <string>IMEX banka</string>
+            <string>Prikaži sve bankomate:
+IMEX banka</string>
+            <string>imexSpotlight</string>
+        </array>
+        <key>7</key>
+        <array>
+            <string>Istarska Kreditna Banka</string>
+            <string>Prikaži sve bankomate:
+Istarska Kreditna Banka</string>
+            <string>ikbSpotlight</string>
+        </array>
+        <key>8</key>
+        <array>
+            <string>Karlovačka banka</string>
+            <string>Prikaži sve bankomate:
+Karlovačka banka</string>
+            <string>kabaSpotlight</string>
+        </array>
+        <key>9</key>
+        <array>
+            <string>Kreditna banka Zagreb</string>
+            <string>Prikaži sve bankomate:
+Kreditna banka Zagreb</string>
+            <string>kbzSpotlight</string>
+        </array>
+        <key>10</key>
+        <array>
+            <string>OTP banka</string>
+            <string>Prikaži sve bankomate:
+OTP banka</string>
+            <string>otpSpotlight</string>
+        </array>
+        <key>11</key>
+        <array>
+            <string>Partner banka</string>
+            <string>Prikaži sve bankomate:
+Partner banka</string>
+            <string>pabaSpotlight</string>
+        </array>
+        <key>12</key>
+        <array>
+            <string>Podravska banka</string>
+            <string>Prikaži sve bankomate:
+Podravska banka</string>
+            <string>pobaSpotlight</string>
+        </array>
+        <key>13</key>
+        <array>
+            <string>Privredna Banka Zagreb</string>
+            <string>Prikaži sve bankomate:
+Privredna Banka Zagreb</string>
+            <string>pbzSpotlight</string>
+        </array>
+        <key>14</key>
+        <array>
+            <string>Raiffeisen bank</string>
+            <string>Prikaži sve bankomate:
+Raiffeisen bank</string>
+            <string>raiffeisenSpotlight</string>
+        </array>
+        <key>15</key>
+        <array>
+            <string>Sberbank</string>
+            <string>Prikaži sve bankomate:
+Sberbank</string>
+            <string>sberbankSpotlight</string>
+        </array>
+        <key>16</key>
+        <array>
+            <string>Slatinska banka</string>
+            <string>Prikaži sve bankomate:
+Slatinska banka</string>
+            <string>slatinskaSpotlight</string>
+        </array>
+        <key>17</key>
+        <array>
+            <string>Splitska banka</string>
+            <string>Prikaži sve bankomate:
+Splitska banka</string>
+            <string>splitskaSpotlight</string>
+        </array>
+        <key>18</key>
+        <array>
+            <string>Veneto banka</string>
+            <string>Prikaži sve bankomate:
+Veneto banka</string>
+            <string>venetoSpotlight</string>
+        </array>
+        <key>19</key>
+        <array>
+            <string>Zagrebačka banka</string>
+            <string>Prikaži sve bankomate:
+Zagrebačka banka</string>
+            <string>zabaSpotlight</string>
+        </array>
+    </dict>
+</plist>

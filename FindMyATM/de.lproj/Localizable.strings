@@ -1,0 +1,30 @@
+/* 
+  Localizable.strings
+  FindMyATM
+
+  Created by Jasmin Abou Aldan on 20/09/15.
+  Copyright © 2015 JaMaCo. Software. All rights reserved.
+ 
+ Translate by: Ilijana Vukmirovic
+*/
+
+NO_INTERNET = "Keine Internetverbindung";
+CHECK_INTERNET = "Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es nochmal";
+SETTINGS = "Einstellungen";
+CANCEL = "Abbrechen";
+OK = "OK";
+GPS_ERROR = "GPS Fehler";
+ALLOW_ACCES = "Sie müssen Ihren Standort zulassen.";
+POSITION_ERROR = "Standort Fehler";
+LOCATION_UNAVAILABLE = "Ihr Standort konnte nicht ermittelt werden. Überprüfen Sie Ihre Einstellungen, falls sich dies wiederholt";
+NAVIGATION = "Navigation";
+START_NAVIGATION = "Möchten Sie die Route starten?";
+YES = "Ja";
+NO = "Nein";
+DID_YOU_KNOW = "Wussten Sie?";
+BANCO_POPOLARE = "Kontoinhaber der Banco Popolare Bank können ohne anfallende Kosten an den Bankautomaten der OTP Geld abheben.";
+IMEX = "Kontoinhaber der IMEX können ohne anfallende Kosten an den folgenden Bankautomaten der MBU oder MBNet Geld abheben:\nBKS,\nCroatia banka,\nErste bank,\nIstarska Kreditna Banka,\nKarlovačka banka,\nKreditna banka Zagreb,\nPartner banka,\nPodravska banka,\nSberbank,\nSlatinska banka,\nVeneto banka";
+ABOVE_BUTTON = "Wählen Sie eine Bank aus der obigen Liste aus";
+PARTNER_BANK = "Kontoinhaber der Partner Bank können Ihr Geld ohne anfallende Kosten an allen Bankautomaten der MBNet Gruppe, die zugehörig zur Croatia Bank sind.";
+ALL_ATMS = "Alle Automaten";
+BANKS = "Banken";

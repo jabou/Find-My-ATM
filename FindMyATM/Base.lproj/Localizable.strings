@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  FindMyATM
+
+  Created by Jasmin Abou Aldan on 20/09/15.
+  Copyright © 2015 JaMaCo. Software. All rights reserved.
+*/
+
+NO_INTERNET = "No internet connection";
+CHECK_INTERNET = "Please check your internet connection and try again";
+SETTINGS = "Settings";
+CANCEL = "Cancel";
+OK = "OK";
+GPS_ERROR = "GPS error";
+ALLOW_ACCES = "You need to allow location access";
+POSITION_ERROR = "Position error";
+LOCATION_UNAVAILABLE = "User location not obtained yet. If this is repeated, check your settings";
+NAVIGATION = "Navigation";
+START_NAVIGATION = "Would you like to start navigation?";
+YES = "Yes";
+NO = "No";
+DID_YOU_KNOW = "Did you know?";
+BANCO_POPOLARE = "Members of Banco Populare can withdraw money from all OTP ATMs with no fee.";
+IMEX = "Members of IMEX bank can withdraw money with no fee from MBU or NMNet ATMs of:\nBKS,\nCroatia banka,\nErste bank,\nIstarska Kreditna Banka,\nKarlovačka banka,\nKreditna banka Zagreb,\nPartner banka,\nPodravska banka,\nSberbank,\nSlatinska banka,\nVeneto banka";
+ABOVE_BUTTON = "Choose a bank included in the list above";
+PARTNER_BANK = "Members of Partner banka can withdraw money with no fee from all ATMs in MBNet system owned by Croatian banks.";
+ALL_ATMS = "All ATMs";
+BANKS = "Banks";

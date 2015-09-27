@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		062CA8161BAF04C6009FECB7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062CA8151BAF04C6009FECB7 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
+		062CA81B1BAF0A1C009FECB7 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A0089A1A629FC800744048 /* CFNetwork.framework */; };
+		064AB71D1BB35E2900EDC296 /* BankList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 064AB71F1BB35E2900EDC296 /* BankList.plist */; };
+		06573ED71BB32B3D003CBBC9 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06573ED61BB32B3D003CBBC9 /* CoreSpotlight.framework */; };
+		0667ADB31BAF0AA8000E00F0 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0667ADAF1BAF0A8E000E00F0 /* Bolts.framework */; };
+		0667ADB41BAF0AA8000E00F0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0667ADB01BAF0A8E000E00F0 /* Parse.framework */; };
+		0667ADB81BAF0E10000E00F0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0667ADB71BAF0E10000E00F0 /* libz.tbd */; };
+		0667ADBA1BAF0E1E000E00F0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0667ADB91BAF0E1E000E00F0 /* libsqlite3.tbd */; };
+		0667ADBC1BAF1803000E00F0 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0667ADBB1BAF1803000E00F0 /* iAd.framework */; };
+		0667ADBE1BAF2C93000E00F0 /* Korzo.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0667ADBD1BAF2C93000E00F0 /* Korzo.gpx */; settings = {ASSET_TAGS = (); }; };
+		0667ADC21BAF2FE4000E00F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0667ADC41BAF2FE4000E00F0 /* Localizable.strings */; };
+		0679C4DB1A82DB450058CAEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0679C4DA1A82DB450058CAEB /* Images.xcassets */; };
+		0693C0661A62A37400C64E71 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A0089C1A629FD000744048 /* AudioToolbox.framework */; };
+		0693C0681A62A38A00C64E71 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A008981A629FC000744048 /* CoreGraphics.framework */; };
+		0693C0691A62A39100C64E71 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A008961A629FBA00744048 /* CoreLocation.framework */; };
+		0693C06B1A62A3A200C64E71 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A008921A629FAA00744048 /* MobileCoreServices.framework */; };
+		0693C06C1A62A3A700C64E71 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A008901A629FA400744048 /* QuartzCore.framework */; };
+		0693C06D1A62A3AD00C64E71 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A0088E1A629F9D00744048 /* Security.framework */; };
+		0693C06E1A62A3B900C64E71 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06A0088C1A629F9500744048 /* SystemConfiguration.framework */; };
+		0693C07B1A62C7AB00C64E71 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0693C0781A62C7AB00C64E71 /* SideMenu.swift */; };
+		0693C07C1A62C7AB00C64E71 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0693C0791A62C7AB00C64E71 /* SideMenuTableViewController.swift */; };
+		06A0086B1A629EB100744048 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A0086A1A629EB100744048 /* AppDelegate.swift */; };
+		06A0086D1A629EB100744048 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A0086C1A629EB100744048 /* ViewController.swift */; };
+		06A008701A629EB100744048 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A0086E1A629EB100744048 /* Main.storyboard */; };
+		06A008811A629EB100744048 /* FindMyATMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A008801A629EB100744048 /* FindMyATMTests.swift */; };
+		06AE90121BB08BD900E2503F /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AE90111BB08BD800E2503F /* Alerts.swift */; settings = {ASSET_TAGS = (); }; };
+		06B6AC821A69E5DD007598E4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06B6AC811A69E5DD007598E4 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		06A0087B1A629EB100744048 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 06A0085D1A629EB100744048 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 06A008641A629EB100744048;
+			remoteInfo = FindMyATM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		062CA8141BAF04C6009FECB7 /* SwiftyJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftyJSON.h; sourceTree = "<group>"; };
+		062CA8151BAF04C6009FECB7 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		064AB71B1BB35D3700EDC296 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		064AB71E1BB35E2900EDC296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/BankList.plist; sourceTree = "<group>"; };
+		06573ED61BB32B3D003CBBC9 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
+		0667ADAF1BAF0A8E000E00F0 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		0667ADB01BAF0A8E000E00F0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		0667ADB71BAF0E10000E00F0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0667ADB91BAF0E1E000E00F0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0667ADBB1BAF1803000E00F0 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		0667ADBD1BAF2C93000E00F0 /* Korzo.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Korzo.gpx; sourceTree = "<group>"; };
+		0670604E1BB3601200C52D57 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
+		0670604F1BB3601200C52D57 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = it; path = it.lproj/BankList.plist; sourceTree = "<group>"; };
+		067060501BB3601200C52D57 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		067060511BB3603A00C52D57 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Main.strings; sourceTree = "<group>"; };
+		067060521BB3603A00C52D57 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = hr; path = hr.lproj/BankList.plist; sourceTree = "<group>"; };
+		067060531BB3603A00C52D57 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		067060541BB3605400C52D57 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		067060551BB3605400C52D57 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = de; path = de.lproj/BankList.plist; sourceTree = "<group>"; };
+		067060561BB3605400C52D57 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		067060571BB3607800C52D57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0679C4DA1A82DB450058CAEB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0693C0781A62C7AB00C64E71 /* SideMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		0693C0791A62C7AB00C64E71 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
+		06A008651A629EB100744048 /* Find My ATM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find My ATM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06A0086A1A629EB100744048 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		06A0086C1A629EB100744048 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		06A0086F1A629EB100744048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		06A0087A1A629EB100744048 /* Find My ATM.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Find My ATM.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06A0087F1A629EB100744048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06A008801A629EB100744048 /* FindMyATMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyATMTests.swift; sourceTree = "<group>"; };
+		06A0088C1A629F9500744048 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		06A0088E1A629F9D00744048 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		06A008901A629FA400744048 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		06A008921A629FAA00744048 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		06A008961A629FBA00744048 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		06A008981A629FC000744048 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		06A0089A1A629FC800744048 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		06A0089C1A629FD000744048 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		06AE90111BB08BD800E2503F /* Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		06B6AC811A69E5DD007598E4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06A008621A629EB100744048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06573ED71BB32B3D003CBBC9 /* CoreSpotlight.framework in Frameworks */,
+				0667ADBC1BAF1803000E00F0 /* iAd.framework in Frameworks */,
+				0667ADBA1BAF0E1E000E00F0 /* libsqlite3.tbd in Frameworks */,
+				0667ADB81BAF0E10000E00F0 /* libz.tbd in Frameworks */,
+				062CA81B1BAF0A1C009FECB7 /* CFNetwork.framework in Frameworks */,
+				0693C06E1A62A3B900C64E71 /* SystemConfiguration.framework in Frameworks */,
+				0693C06D1A62A3AD00C64E71 /* Security.framework in Frameworks */,
+				0693C06C1A62A3A700C64E71 /* QuartzCore.framework in Frameworks */,
+				0693C06B1A62A3A200C64E71 /* MobileCoreServices.framework in Frameworks */,
+				0693C0691A62A39100C64E71 /* CoreLocation.framework in Frameworks */,
+				06B6AC821A69E5DD007598E4 /* MapKit.framework in Frameworks */,
+				0693C0681A62A38A00C64E71 /* CoreGraphics.framework in Frameworks */,
+				0693C0661A62A37400C64E71 /* AudioToolbox.framework in Frameworks */,
+				0667ADB31BAF0AA8000E00F0 /* Bolts.framework in Frameworks */,
+				0667ADB41BAF0AA8000E00F0 /* Parse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06A008771A629EB100744048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0624F19E1A62A0F000D8DA68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06573ED61BB32B3D003CBBC9 /* CoreSpotlight.framework */,
+				0667ADBB1BAF1803000E00F0 /* iAd.framework */,
+				0667ADB91BAF0E1E000E00F0 /* libsqlite3.tbd */,
+				0667ADB71BAF0E10000E00F0 /* libz.tbd */,
+				0667ADAF1BAF0A8E000E00F0 /* Bolts.framework */,
+				0667ADB01BAF0A8E000E00F0 /* Parse.framework */,
+				06B6AC811A69E5DD007598E4 /* MapKit.framework */,
+				06A0089C1A629FD000744048 /* AudioToolbox.framework */,
+				06A0089A1A629FC800744048 /* CFNetwork.framework */,
+				06A008981A629FC000744048 /* CoreGraphics.framework */,
+				06A008961A629FBA00744048 /* CoreLocation.framework */,
+				06A008921A629FAA00744048 /* MobileCoreServices.framework */,
+				06A008901A629FA400744048 /* QuartzCore.framework */,
+				06A0088E1A629F9D00744048 /* Security.framework */,
+				06A0088C1A629F9500744048 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		062CA8131BAF0474009FECB7 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				062CA8141BAF04C6009FECB7 /* SwiftyJSON.h */,
+				062CA8151BAF04C6009FECB7 /* SwiftyJSON.swift */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		06A0085C1A629EB100744048 = {
+			isa = PBXGroup;
+			children = (
+				0667ADBD1BAF2C93000E00F0 /* Korzo.gpx */,
+				0624F19E1A62A0F000D8DA68 /* Frameworks */,
+				06A008671A629EB100744048 /* FindMyATM */,
+				06A0087D1A629EB100744048 /* FindMyATMTests */,
+				06A008661A629EB100744048 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06A008661A629EB100744048 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06A008651A629EB100744048 /* Find My ATM.app */,
+				06A0087A1A629EB100744048 /* Find My ATM.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06A008671A629EB100744048 /* FindMyATM */ = {
+			isa = PBXGroup;
+			children = (
+				062CA8131BAF0474009FECB7 /* JSON */,
+				06A0086E1A629EB100744048 /* Main.storyboard */,
+				06A0086A1A629EB100744048 /* AppDelegate.swift */,
+				06A0086C1A629EB100744048 /* ViewController.swift */,
+				0693C0781A62C7AB00C64E71 /* SideMenu.swift */,
+				0693C0791A62C7AB00C64E71 /* SideMenuTableViewController.swift */,
+				06AE90111BB08BD800E2503F /* Alerts.swift */,
+				0679C4DA1A82DB450058CAEB /* Images.xcassets */,
+				06A008681A629EB100744048 /* Supporting Files */,
+			);
+			path = FindMyATM;
+			sourceTree = "<group>";
+		};
+		06A008681A629EB100744048 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				064AB71B1BB35D3700EDC296 /* Info.plist */,
+				064AB71F1BB35E2900EDC296 /* BankList.plist */,
+				0667ADC41BAF2FE4000E00F0 /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		06A0087D1A629EB100744048 /* FindMyATMTests */ = {
+			isa = PBXGroup;
+			children = (
+				06A008801A629EB100744048 /* FindMyATMTests.swift */,
+				06A0087E1A629EB100744048 /* Supporting Files */,
+			);
+			path = FindMyATMTests;
+			sourceTree = "<group>";
+		};
+		06A0087E1A629EB100744048 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				06A0087F1A629EB100744048 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06A008641A629EB100744048 /* Find My ATM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06A008841A629EB100744048 /* Build configuration list for PBXNativeTarget "Find My ATM" */;
+			buildPhases = (
+				06A008611A629EB100744048 /* Sources */,
+				06A008621A629EB100744048 /* Frameworks */,
+				06A008631A629EB100744048 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Find My ATM";
+			productName = FindMyATM;
+			productReference = 06A008651A629EB100744048 /* Find My ATM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		06A008791A629EB100744048 /* Find My ATMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06A008871A629EB100744048 /* Build configuration list for PBXNativeTarget "Find My ATMTests" */;
+			buildPhases = (
+				06A008761A629EB100744048 /* Sources */,
+				06A008771A629EB100744048 /* Frameworks */,
+				06A008781A629EB100744048 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06A0087C1A629EB100744048 /* PBXTargetDependency */,
+			);
+			name = "Find My ATMTests";
+			productName = FindMyATMTests;
+			productReference = 06A0087A1A629EB100744048 /* Find My ATM.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06A0085D1A629EB100744048 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "JaMaCo. Software";
+				TargetAttributes = {
+					06A008641A629EB100744048 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 9ZQJ38F5V6;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 0;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					06A008791A629EB100744048 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 9ZQJ38F5V6;
+						TestTargetID = 06A008641A629EB100744048;
+					};
+				};
+			};
+			buildConfigurationList = 06A008601A629EB100744048 /* Build configuration list for PBXProject "Find My ATM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				it,
+				hr,
+				de,
+			);
+			mainGroup = 06A0085C1A629EB100744048;
+			productRefGroup = 06A008661A629EB100744048 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06A008641A629EB100744048 /* Find My ATM */,
+				06A008791A629EB100744048 /* Find My ATMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06A008631A629EB100744048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				064AB71D1BB35E2900EDC296 /* BankList.plist in Resources */,
+				0667ADBE1BAF2C93000E00F0 /* Korzo.gpx in Resources */,
+				06A008701A629EB100744048 /* Main.storyboard in Resources */,
+				0667ADC21BAF2FE4000E00F0 /* Localizable.strings in Resources */,
+				0679C4DB1A82DB450058CAEB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06A008781A629EB100744048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06A008611A629EB100744048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0693C07B1A62C7AB00C64E71 /* SideMenu.swift in Sources */,
+				06A0086D1A629EB100744048 /* ViewController.swift in Sources */,
+				06A0086B1A629EB100744048 /* AppDelegate.swift in Sources */,
+				062CA8161BAF04C6009FECB7 /* SwiftyJSON.swift in Sources */,
+				06AE90121BB08BD900E2503F /* Alerts.swift in Sources */,
+				0693C07C1A62C7AB00C64E71 /* SideMenuTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06A008761A629EB100744048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06A008811A629EB100744048 /* FindMyATMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06A0087C1A629EB100744048 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 06A008641A629EB100744048 /* Find My ATM */;
+			targetProxy = 06A0087B1A629EB100744048 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		064AB71F1BB35E2900EDC296 /* BankList.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				064AB71E1BB35E2900EDC296 /* Base */,
+				0670604F1BB3601200C52D57 /* it */,
+				067060521BB3603A00C52D57 /* hr */,
+				067060551BB3605400C52D57 /* de */,
+			);
+			name = BankList.plist;
+			sourceTree = "<group>";
+		};
+		0667ADC41BAF2FE4000E00F0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				067060501BB3601200C52D57 /* it */,
+				067060531BB3603A00C52D57 /* hr */,
+				067060561BB3605400C52D57 /* de */,
+				067060571BB3607800C52D57 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		06A0086E1A629EB100744048 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06A0086F1A629EB100744048 /* Base */,
+				0670604E1BB3601200C52D57 /* it */,
+				067060511BB3603A00C52D57 /* hr */,
+				067060541BB3605400C52D57 /* de */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06A008821A629EB100744048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jasmin Abou Aldan (T6GK77W8B9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jasmin Abou Aldan (T6GK77W8B9)";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		06A008831A629EB100744048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jasmin Abou Aldan (9ZQJ38F5V6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jasmin Abou Aldan (9ZQJ38F5V6)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06A008851A629EB100744048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jasmin Abou Aldan (T6GK77W8B9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jasmin Abou Aldan (T6GK77W8B9)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = FindMyATM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JasminAbouAldan.FindMyATM;
+				PRODUCT_NAME = "Find My ATM";
+				PROVISIONING_PROFILE = "b3ceaff7-c8d2-4d8b-a8b4-6b841449f81f";
+			};
+			name = Debug;
+		};
+		06A008861A629EB100744048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jasmin Abou Aldan (9ZQJ38F5V6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jasmin Abou Aldan (9ZQJ38F5V6)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = FindMyATM/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JasminAbouAldan.FindMyATM;
+				PRODUCT_NAME = "Find My ATM";
+				PROVISIONING_PROFILE = "4f8177cd-f038-45d4-a1a5-aaef51ed690e";
+			};
+			name = Release;
+		};
+		06A008881A629EB100744048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = FindMyATMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JasminAbouAldan.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "Find My ATM";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Find My ATM.app/Find My ATM";
+			};
+			name = Debug;
+		};
+		06A008891A629EB100744048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = FindMyATMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.JasminAbouAldan.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "Find My ATM";
+				PROVISIONING_PROFILE = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Find My ATM.app/Find My ATM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06A008601A629EB100744048 /* Build configuration list for PBXProject "Find My ATM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06A008821A629EB100744048 /* Debug */,
+				06A008831A629EB100744048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06A008841A629EB100744048 /* Build configuration list for PBXNativeTarget "Find My ATM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06A008851A629EB100744048 /* Debug */,
+				06A008861A629EB100744048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06A008871A629EB100744048 /* Build configuration list for PBXNativeTarget "Find My ATMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06A008881A629EB100744048 /* Debug */,
+				06A008891A629EB100744048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06A0085D1A629EB100744048 /* Project object */;
+}
