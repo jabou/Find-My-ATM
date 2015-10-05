@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cto-c9-8EP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cto-c9-8EP">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -22,7 +22,7 @@
                                 <animations/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lw0-0D-FOY">
-                                <rect key="frame" x="549" y="505" width="35" height="35"/>
+                                <rect key="frame" x="549" y="549" width="35" height="35"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="SLI-Eu-liM"/>
@@ -47,7 +47,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8Ru-lG-pSC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="4AE-mS-fgd"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Lw0-0D-FOY" secondAttribute="bottom" constant="60" id="BCs-LF-awd"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Lw0-0D-FOY" secondAttribute="bottom" constant="16" id="BCs-LF-awd"/>
                             <constraint firstItem="3Pn-n6-oE7" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="GV6-Ms-6xf"/>
                             <constraint firstItem="8Ru-lG-pSC" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="Hh3-tu-cha"/>
                             <constraint firstItem="8Ru-lG-pSC" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Iwn-RZ-UZN"/>
