@@ -15,7 +15,6 @@
 		0667ADB41BAF0AA8000E00F0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0667ADB01BAF0A8E000E00F0 /* Parse.framework */; };
 		0667ADB81BAF0E10000E00F0 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0667ADB71BAF0E10000E00F0 /* libz.tbd */; };
 		0667ADBA1BAF0E1E000E00F0 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0667ADB91BAF0E1E000E00F0 /* libsqlite3.tbd */; };
-		0667ADBC1BAF1803000E00F0 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0667ADBB1BAF1803000E00F0 /* iAd.framework */; };
 		0667ADBE1BAF2C93000E00F0 /* Korzo.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 0667ADBD1BAF2C93000E00F0 /* Korzo.gpx */; settings = {ASSET_TAGS = (); }; };
 		0667ADC21BAF2FE4000E00F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0667ADC41BAF2FE4000E00F0 /* Localizable.strings */; };
 		0679C4DB1A82DB450058CAEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0679C4DA1A82DB450058CAEB /* Images.xcassets */; };
@@ -56,7 +55,6 @@
 		0667ADB01BAF0A8E000E00F0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		0667ADB71BAF0E10000E00F0 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		0667ADB91BAF0E1E000E00F0 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		0667ADBB1BAF1803000E00F0 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		0667ADBD1BAF2C93000E00F0 /* Korzo.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Korzo.gpx; sourceTree = "<group>"; };
 		0670604E1BB3601200C52D57 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
 		0670604F1BB3601200C52D57 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = it; path = it.lproj/BankList.plist; sourceTree = "<group>"; };
@@ -96,7 +94,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				06573ED71BB32B3D003CBBC9 /* CoreSpotlight.framework in Frameworks */,
-				0667ADBC1BAF1803000E00F0 /* iAd.framework in Frameworks */,
 				0667ADBA1BAF0E1E000E00F0 /* libsqlite3.tbd in Frameworks */,
 				0667ADB81BAF0E10000E00F0 /* libz.tbd in Frameworks */,
 				062CA81B1BAF0A1C009FECB7 /* CFNetwork.framework in Frameworks */,
@@ -127,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				06573ED61BB32B3D003CBBC9 /* CoreSpotlight.framework */,
-				0667ADBB1BAF1803000E00F0 /* iAd.framework */,
 				0667ADB91BAF0E1E000E00F0 /* libsqlite3.tbd */,
 				0667ADB71BAF0E10000E00F0 /* libz.tbd */,
 				0667ADAF1BAF0A8E000E00F0 /* Bolts.framework */,

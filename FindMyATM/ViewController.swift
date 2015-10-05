@@ -12,7 +12,6 @@ import Foundation
 import SystemConfiguration
 import Parse
 import CoreLocation
-import iAd
 import CoreSpotlight
 
 /**************************************************************************************************************/
@@ -30,7 +29,7 @@ public var coreSpotlight: Bool = false
 public var indexNumber: Int!
 
 //MARK: - View Controller
-class ViewController: UIViewController, SideMenuDelegate, UIGestureRecognizerDelegate, CLLocationManagerDelegate, MKMapViewDelegate, ADBannerViewDelegate{
+class ViewController: UIViewController, SideMenuDelegate, UIGestureRecognizerDelegate, CLLocationManagerDelegate, MKMapViewDelegate{
     
     /**********************************************************************************************************/
     //MARK: - Variable declaration
@@ -144,12 +143,6 @@ class ViewController: UIViewController, SideMenuDelegate, UIGestureRecognizerDel
         if #available(iOS 8.0, *){
             manager.requestWhenInUseAuthorization()
         }
-        
-        /******************************************************************************************************/
-        //MARK: iAd banner setup
-        
-        let AddBannerView = ADBannerView(frame: CGRectMake(0, self.view.frame.size.height - 50, 320,38))
-        self.view.addSubview(AddBannerView)
         
         /******************************************************************************************************/
         //MARK: Fill map with data depending how it was launched
