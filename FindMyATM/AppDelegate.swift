@@ -11,11 +11,12 @@ import Parse
 import CoreSpotlight
 import MobileCoreServices
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var adView: MPAdView?
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -37,6 +38,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
             
         }
+        
+        adView = MPAdView(adUnitId: "024031c116fd4bb78630a444f48fb096", size: MOPUB_BANNER_SIZE)
         
         //MARK: Status and navigation bar colors
         UINavigationBar.appearance().barTintColor = UIColor(red: 33/255.0, green: 150/255.0, blue: 243/255.0, alpha: 1.0)

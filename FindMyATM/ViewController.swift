@@ -14,7 +14,6 @@ import Parse
 import CoreLocation
 import CoreSpotlight
 
-/**************************************************************************************************************/
 //MARK: - Custom Point Annotation class
 ///Subclass from MKPointAnnotation class with support for pin image.
 
@@ -22,20 +21,19 @@ public class CustomPointAnnotation: MKPointAnnotation {
     var imageName: String!
 }
 
-/**************************************************************************************************************/
 //MARK: - Public variable init
 
 public var coreSpotlight: Bool = false
 public var indexNumber: Int!
 
 //MARK: - View Controller
-class ViewController: UIViewController, SideMenuDelegate, UIGestureRecognizerDelegate, CLLocationManagerDelegate, MKMapViewDelegate{
+class ViewController: UIViewController, SideMenuDelegate, UIGestureRecognizerDelegate, CLLocationManagerDelegate, MKMapViewDelegate, MPAdViewDelegate{
     
-    /**********************************************************************************************************/
     //MARK: - Variable declaration
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var leftEdgeGestureView: UIView!
+    @IBOutlet weak var buttonBottomConstraint: NSLayoutConstraint!
     
     var sideMenu: SideMenu = SideMenu()
     let manager = CLLocationManager()
@@ -43,15 +41,15 @@ class ViewController: UIViewController, SideMenuDelegate, UIGestureRecognizerDel
     let activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.Gray)
     let query = PFQuery(className: "FindMyATM")
     var myArray: Array<String>!
+    var adView: MPAdView?
     
-    /**********************************************************************************************************/
     //MARK: - Gesture recognizer
     
     func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
     
-    /**********************************************************************************************************/
+
     //MARK: - Fitst internet connection check
     //If internet connection is not established, user will be warned
     
@@ -61,21 +59,21 @@ class ViewController: UIViewController, SideMenuDelegate, UIGestureRecognizerDel
         }
     }
     
-    /**********************************************************************************************************/
+
     //MARK: - App setup in viewDidLoad
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        /******************************************************************************************************/
+
         //MARK: Setup navigation bar title and menu button
         
         self.navigationItem.title = "Find My ATM"
         let image: UIImage = UIImage(named: "menu.png")!
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self, action: Selector("openMenuButtonTapped"))
         
-        /******************************************************************************************************/
+
         //MARK: Gesture setup
         
         let showGestureRecognizer: UIScreenEdgePanGestureRecognizer = UIScreenEdgePanGestureRecognizer(target: self, action: "showSwipe:")
@@ -86,7 +84,7 @@ class ViewController: UIViewController, SideMenuDelegate, UIGestureRecognizerDel
         hideGestureRecognizer.direction = UISwipeGestureRecognizerDirection.Left
         self.view.addGestureRecognizer(hideGestureRecognizer)
 
-        /******************************************************************************************************/
+
         //MARK: Sidebar setup and fill
         
         let url = NSBundle.mainBundle().URLForResource("BankList", withExtension: "plist")
@@ -103,7 +101,7 @@ class ViewController: UIViewController, SideMenuDelegate, UIGestureRecognizerDel
         sideMenu = SideMenu(sourceView: self.view, menuItems: items)
         sideMenu.delegate = self
         
-        /******************************************************************************************************/
+
         //MARK: Activity indicator setup
         
         activityIndicator.frame = CGRectMake(100, 100, 100, 100);
@@ -111,7 +109,7 @@ class ViewController: UIViewController, SideMenuDelegate, UIGestureRecognizerDel
         activityIndicator.bringSubviewToFront(self.view)
         self.view.addSubview(activityIndicator)
         
-        /******************************************************************************************************/
+
         //MARK: Maps setup
         
         mapView.mapType = MKMapType.Standard
@@ -134,7 +132,7 @@ class ViewController: UIViewController, SideMenuDelegate, UIGestureRecognizerDel
         let region = MKCoordinateRegion(center: zoomLocation, span: span)
         mapView.setRegion(region, animated: true)
 
-        /******************************************************************************************************/
+
         //MARK: Location manager setup
         
         manager.delegate = self
@@ -144,7 +142,7 @@ class ViewController: UIViewController, SideMenuDelegate, UIGestureRecognizerDel
             manager.requestWhenInUseAuthorization()
         }
         
-        /******************************************************************************************************/
+
         //MARK: Fill map with data depending how it was launched
         /*
             If app was launched normaly
@@ -163,14 +161,52 @@ class ViewController: UIViewController, SideMenuDelegate, UIGestureRecognizerDel
 
     }
     
-    /**********************************************************************************************************/
+
+    //MARK: - Ad Banner setup
+    func appdelegate() -> AppDelegate{
+        return UIApplication.sharedApplication().delegate as! AppDelegate
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        adView = self.appdelegate().adView
+        adView?.delegate = self
+        adView?.frame = CGRectMake((self.view.bounds.size.width - MOPUB_BANNER_SIZE.width)/2, self.view.bounds.size.height, MOPUB_BANNER_SIZE.width, MOPUB_BANNER_SIZE.height)
+        self.view.addSubview(adView!)
+        adView?.loadAd()
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        adView?.delegate = nil
+        adView = nil
+        adView?.removeFromSuperview()
+    }
+    
+    func adViewDidLoadAd(view: MPAdView!) {
+        sideMenu.heighAd = 50.0
+        sideMenu.createSideMenu()
+        buttonBottomConstraint.constant = 60.0
+        adView?.frame = CGRectMake((self.view.bounds.size.width - MOPUB_BANNER_SIZE.width)/2, self.view.bounds.size.height - MOPUB_BANNER_SIZE.height, MOPUB_BANNER_SIZE.width, MOPUB_BANNER_SIZE.height)
+    }
+    
+    func adViewDidFailToLoadAd(view: MPAdView!) {
+        sideMenu.heighAd = 0.0
+        sideMenu.createSideMenu()
+        buttonBottomConstraint.constant = 16.0
+        adView?.frame = CGRectMake((self.view.bounds.size.width - MOPUB_BANNER_SIZE.width)/2, self.view.bounds.size.height, MOPUB_BANNER_SIZE.width, MOPUB_BANNER_SIZE.height)
+    }
+    
+    func viewControllerForPresentingModalView() -> UIViewController! {
+        return self
+    }
+        
+
     //MARK: - Location Manager Stop Updating Location
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         manager.stopUpdatingLocation()
     }
     
-    /**********************************************************************************************************/
+
     //MARK: - Map View Methods
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
@@ -237,7 +273,7 @@ class ViewController: UIViewController, SideMenuDelegate, UIGestureRecognizerDel
         }
     }
     
-    /**********************************************************************************************************/
+
     //MARK: - Start Navigation Method
     
     //For iOS 7 Navigation start
@@ -289,7 +325,7 @@ class ViewController: UIViewController, SideMenuDelegate, UIGestureRecognizerDel
         })
     }
     
-    /**********************************************************************************************************/
+
     //MARK: - Side Menu Methods
     
     func openMenuButtonTapped() {
@@ -534,7 +570,7 @@ class ViewController: UIViewController, SideMenuDelegate, UIGestureRecognizerDel
         }
     }
 
-    /**********************************************************************************************************/
+
     //MARK: - Connection with IBAction (my location button)
     ///When the button is pressed (if we have retrieved the location) zoom will be at the user's location.
     
@@ -560,7 +596,7 @@ class ViewController: UIViewController, SideMenuDelegate, UIGestureRecognizerDel
         // Dispose of any resources that can be recreated.
     }
     
-    /**********************************************************************************************************/
+
     //MARK: - Custom Functions
     //MARK: Placing pins
     ///Function for placing custom pins on the map.
@@ -618,7 +654,7 @@ class ViewController: UIViewController, SideMenuDelegate, UIGestureRecognizerDel
         }
     }
     
-    /**********************************************************************************************************/
+
     //MARK: Function for checking internet connection
     ///Function checks the internet connection and returns true or false value
     /// - Returns: Bool

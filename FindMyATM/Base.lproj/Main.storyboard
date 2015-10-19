@@ -61,6 +61,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="uEk-0P-3Ix"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="buttonBottomConstraint" destination="BCs-LF-awd" id="MsX-CF-zXF"/>
                         <outlet property="leftEdgeGestureView" destination="3Pn-n6-oE7" id="Hmn-2L-HI7"/>
                         <outlet property="mapView" destination="8Ru-lG-pSC" id="pdw-9g-bab"/>
                     </connections>

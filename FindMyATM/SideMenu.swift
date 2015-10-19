@@ -28,6 +28,8 @@ class SideMenu: NSObject, SideMenuTableViewControllerDelegate {
     var originalView: UIView!
     var delegate: SideMenuDelegate?
     var isSideMenuOpen: Bool = false
+    var heighAd: CGFloat = 0.0
+
     
     /**********************************************************************************************************/
     //MARK: Class init
@@ -48,8 +50,8 @@ class SideMenu: NSObject, SideMenuTableViewControllerDelegate {
     ///Method that creates menu on screen
     
     func createSideMenu(){
-
-        sideMenuContainerView.frame = CGRectMake(isSideMenuOpen ? 0 : -menuWidth, originalView.frame.origin.y, menuWidth, originalView.frame.size.height)
+        
+        sideMenuContainerView.frame = CGRectMake(isSideMenuOpen ? 0 : -menuWidth, originalView.frame.origin.y, menuWidth, originalView.frame.size.height-heighAd)
         sideMenuContainerView.backgroundColor = UIColor.whiteColor()
         sideMenuContainerView.layer.shadowOffset = CGSizeMake(-2.0, -2.0) //sjene
         sideMenuContainerView.layer.shadowRadius = 2.0
