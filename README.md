@@ -15,7 +15,7 @@ The idea for this app was born after realising that a lot of people were wasting
 - Online Parse database with names, address and coordinates of ATMS
 - Apple Maps with custom pin images (every bank has its own logo)
 - GPS Navigation to selected ATM
-- 
+
 ##Version 2.0
 - support for Core Spotlight
 - localization to Croatian, German and Italian
