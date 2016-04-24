@@ -10,6 +10,13 @@ The app offers you ATM locations for more than 15 banks. It provides the possibi
 The idea for this app was born after realising that a lot of people were wasting precious time looking for a place to withdraw money. The app is translated to english so it is appropriate for tourists.
 
 ##Screenshots
+![all](https://cloud.githubusercontent.com/assets/11990539/14767089/bcdd0ad8-0a1d-11e6-91f3-f7af7fbaf2ef.png "All ATMs")
+![position error](https://cloud.githubusercontent.com/assets/11990539/14767088/bcdbf4ae-0a1d-11e6-980d-db854dc0d4de.png "Check of user position")
+![address](https://cloud.githubusercontent.com/assets/11990539/14767086/bcd303d0-0a1d-11e6-9695-a3419f80fbd7.png "ATM Address")
+![info](https://cloud.githubusercontent.com/assets/11990539/14767085/bccfa4ec-0a1d-11e6-8a0d-8e0812a99d05.png "Info alert view")
+![filter](https://cloud.githubusercontent.com/assets/11990539/14767110/51ba79ba-0a1e-11e6-8304-d1025af0724e.png "Side menu for filtering bank")
+![filtered bank](https://cloud.githubusercontent.com/assets/11990539/14767087/bcd97e90-0a1d-11e6-81eb-51fc3eb7cffa.png "Filtered bank")
+![action](https://cloud.githubusercontent.com/assets/11990539/14767090/bcea78ee-0a1d-11e6-8b04-d23cefcb33c6.png "Alert view with action of opening side filter menu")
 
 ##Version 1.0
 - Online Parse database with names, address and coordinates of ATMS
